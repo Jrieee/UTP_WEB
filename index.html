@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Muhammad Fajri Ramadhani - Home</title>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+        }
+        .btn-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <nav class="bg-gradient-to-r from-blue-600 to-blue-700 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-white font-bold text-xl">Izanami</div>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="text-white hover:text-blue-100 nav-link transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="text-white hover:text-blue-100 nav-link transition duration-300">About</a></li>
+                    <li><a href="favorite-comics.html" class="text-white hover:text-blue-100 nav-link transition duration-300">Favorite Komik</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-blue-100 nav-link transition duration-300">Contact</a></li>
+                    <li><a href="portfolio.html" class="text-white hover:text-blue-100 nav-link transition duration-300">Portofolio</a></li>
+                </ul>
+                
+                <button class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="hidden md:hidden bg-blue-800">
+            <ul class="px-4 py-2">
+                <li class="py-2"><a href="index.html" class="text-white block">Home</a></li>
+                <li class="py-2"><a href="about.html" class="text-white block">About</a></li>
+                <li class="py-2"><a href="favorite-comics.html" class="text-white block">Favorite Komik</a></li>
+                <li class="py-2"><a href="contact.html" class="text-white block">Contact</a></li>
+                <li class="py-2"><a href="portfolio.html" class="text-white block">Portofolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="hero-gradient text-white py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">Welcome to My Modest Portfolio</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto">Passionate web developer creates innovative digital experiences and a comic reader </p>
+            <div class="flex justify-center gap-4">
+                <a href="portfolio.html" class="bg-white text-blue-600 px-8 py-3 rounded-full font-medium transition duration-300 btn-hover">View My Work</a>
+                <a href="contact.html" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-medium transition duration-300 hover:bg-white hover:text-blue-600">Contact Me</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What I Do</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                    <p class="text-gray-600">Creating responsive and user-friendly websites with modern technologies.</p>
+                </div>
+                
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+                    <p class="text-gray-600">Designing intuitive interfaces and excellent user experiences.</p>
+                </div>
+                
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 transition duration-300 hover:shadow-xl">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Comic Enthusiast</h3>
+                    <p class="text-gray-600">Passionate about comics and visual storytelling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Muhammad Fajri Ramadhani</h2>
+                    <p class="text-gray-400 mt-2">Web Developer & Comic Enthusiast</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Muhammad Fajri Ramadhani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

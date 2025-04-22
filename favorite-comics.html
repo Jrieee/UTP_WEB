@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Muhammad Fajri Ramadhani - Favorite Komik</title>
+    <style>
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .comic-card {
+            transition: all 0.3s ease;
+        }
+        .comic-card:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    
+    <nav class="bg-gradient-to-r from-blue-600 to-blue-700 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-white font-bold text-xl">Izanami</div>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="text-white hover:text-blue-100 nav-link transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="text-white hover:text-blue-100 nav-link transition duration-300">About</a></li>
+                    <li><a href="favorite-comics.html" class="text-white hover:text-blue-100 nav-link transition duration-300">Favorite Komik</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-blue-100 nav-link transition duration-300">Contact</a></li>
+                    <li><a href="portfolio.html" class="text-white hover:text-blue-100 nav-link transition duration-300">Portofolio</a></li>
+                </ul>
+                
+                <button class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center mb-16">Favorite Komik</h1>
+            
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden comic-card">
+                    <div class="h-64 overflow-hidden">
+                        
+                        <img src="https://via.placeholder.com/400x300" alt="Komik 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Komik 1</h3>
+                        <p class="text-gray-600 mb-4">Deskripsi singkat tentang komik ini. Cerita yang menarik dengan karakter yang mengesankan.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-blue-600">Rating: 4.5/5</span>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Read More
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden comic-card">
+                    <div class="h-64 overflow-hidden">
+                        
+                        <img src="https://via.placeholder.com/400x300" alt="Komik 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Komik 2</h3>
+                        <p class="text-gray-600 mb-4">Deskripsi singkat tentang komik ini. Cerita yang menarik dengan karakter yang mengesankan.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-blue-600">Rating: 4.8/5</span>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Read More
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden comic-card">
+                    <div class="h-64 overflow-hidden">
+                        
+                        <img src="https://via.placeholder.com/400x300" alt="Komik 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Komik 3</h3>
+                        <p class="text-gray-600 mb-4">Deskripsi singkat tentang komik ini. Cerita yang menarik dengan karakter yang mengesankan.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-blue-600">Rating: 4.7/5</span>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Read More
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden comic-card">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://via.placeholder.com/400x300" alt="Komik 4" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Komik 4</h3>
+                        <p class="text-gray-600 mb-4">Deskripsi singkat tentang komik ini. Cerita yang menarik dengan karakter yang mengesankan.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-blue-600">Rating: 4.3/5</span>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Read More
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden comic-card">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://via.placeholder.com/400x300" alt="Komik 5" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Komik 5</h3>
+                        <p class="text-gray-600 mb-4">Deskripsi singkat tentang komik ini. Cerita yang menarik dengan karakter yang mengesankan.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-blue-600">Rating: 4.6/5</span>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Read More
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden comic-card">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://via.placeholder.com/400x300" alt="Komik 6" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Komik 6</h3>
+                        <p class="text-gray-600 mb-4">Deskripsi singkat tentang komik ini. Cerita yang menarik dengan karakter yang mengesankan.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-blue-600">Rating: 4.9/5</span>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-300">
+                                Read More
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Muhammad Fajri Ramadhani</h2>
+                    <p class="text-gray-400 mt-2">Web Developer & Comic Enthusiast</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Muhammad Fajri Ramadhani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
