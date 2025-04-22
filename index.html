@@ -45,13 +45,13 @@
                     <li><a href="portfolio.html" class="text-white hover:text-blue-100 nav-link transition duration-300">Portofolio</a></li>
                 </ul>
                 
-                <button class="md:hidden text-white focus:outline-none">
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
         
-        <div class="hidden md:hidden bg-blue-800">
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-800">
             <ul class="px-4 py-2">
                 <li class="py-2"><a href="index.html" class="text-white block">Home</a></li>
                 <li class="py-2"><a href="about.html" class="text-white block">About</a></li>
@@ -110,7 +110,7 @@
         </div>
     </div>
 
-    
+  
     <footer class="bg-gray-800 text-white py-10">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
@@ -138,5 +138,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

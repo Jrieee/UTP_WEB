@@ -32,7 +32,7 @@
     </style>
 </head>
 <body class="bg-gray-50 font-sans">
-    <!-- Navigation (Same as other pages) -->
+    
     <nav class="bg-gradient-to-r from-blue-600 to-blue-700 shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
@@ -44,27 +44,37 @@
                     <li><a href="contact.html" class="text-white hover:text-blue-100 nav-link transition duration-300">Contact</a></li>
                     <li><a href="portfolio.html" class="text-white hover:text-blue-100 nav-link transition duration-300">Portofolio</a></li>
                 </ul>
-                <!-- Mobile menu button -->
-                <button class="md:hidden text-white focus:outline-none">
+                
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-800">
+            <ul class="px-4 py-2">
+                <li class="py-2"><a href="index.html" class="text-white block">Home</a></li>
+                <li class="py-2"><a href="about.html" class="text-white block">About</a></li>
+                <li class="py-2"><a href="favorite-comics.html" class="text-white block">Favorite Komik</a></li>
+                <li class="py-2"><a href="contact.html" class="text-white block">Contact</a></li>
+                <li class="py-2"><a href="portfolio.html" class="text-white block">Portofolio</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Contact Section -->
+    
     <div class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <h1 class="text-4xl font-bold text-center mb-16">Contact Me</h1>
             
             <div class="max-w-4xl mx-auto">
                 <div class="flex flex-col md:flex-row gap-8">
-                    <!-- Contact Information -->
+                   
                     <div class="md:w-1/2">
                         <h2 class="text-2xl font-bold mb-6 text-blue-600">Get In Touch</h2>
                         
                         <div class="space-y-6">
-                            <!-- Email -->
+                           
                             <div class="flex items-start contact-info-item bg-gray-50 p-4 rounded-lg shadow-sm">
                                 <div class="bg-blue-100 p-3 rounded-full text-blue-600 mr-4">
                                     <i class="fas fa-envelope"></i>
@@ -75,7 +85,7 @@
                                 </div>
                             </div>
                             
-                            <!-- Phone -->
+                            
                             <div class="flex items-start contact-info-item bg-gray-50 p-4 rounded-lg shadow-sm">
                                 <div class="bg-blue-100 p-3 rounded-full text-blue-600 mr-4">
                                     <i class="fas fa-phone"></i>
@@ -86,7 +96,7 @@
                                 </div>
                             </div>
                             
-                            <!-- Location -->
+                            
                             <div class="flex items-start contact-info-item bg-gray-50 p-4 rounded-lg shadow-sm">
                                 <div class="bg-blue-100 p-3 rounded-full text-blue-600 mr-4">
                                     <i class="fas fa-map-marker-alt"></i>
@@ -97,7 +107,7 @@
                                 </div>
                             </div>
                             
-                            <!-- Social Media -->
+                            
                             <div class="flex items-start contact-info-item bg-gray-50 p-4 rounded-lg shadow-sm">
                                 <div class="bg-blue-100 p-3 rounded-full text-blue-600 mr-4">
                                     <i class="fas fa-share-alt"></i>
@@ -123,7 +133,7 @@
                         </div>
                     </div>
                     
-                    <!-- Contact Form -->
+                    
                     <div class="md:w-1/2">
                         <h2 class="text-2xl font-bold mb-6 text-blue-600">Send Me a Message</h2>
                         
@@ -159,7 +169,7 @@
         </div>
     </div>
 
-    <!-- Footer (Same as other pages) -->
+    
     <footer class="bg-gray-800 text-white py-10">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
@@ -187,5 +197,15 @@
             </div>
         </div>
     </footer>
+
+    <script>
+       
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
